@@ -9,7 +9,7 @@ body {
   	justify-content: center;
 
 
-    padding:10px;
+    padding:5px;
     margin:10px;
     background-color:#2F4F4F;
     list-style:none;
@@ -31,7 +31,7 @@ body {
     background-color:#4682B4;
     color: #333;
     text-decoration: none;
-    border-bottom:5px solid   #006400;
+    border-bottom:10px solid   #006400;
 }
 
 #menu ul li a:hover {
@@ -41,11 +41,11 @@ body {
 }
 
 #Rodape {
-	height: 50px;
+	height: 30px;
 	width: 100%;display: flex;
 	position: absolute;
 	bottom: 0px;
-    background-color: #708090a;
+    background-color: #708090;
 }
 
 #Conteudo{
@@ -53,8 +53,8 @@ body {
     position: relative;
     margin-left: 25%;
     width: 50%;
-    padding: 10px;
-    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 20px;
+    border: 5px solid rgba(0, 0, 0, .3);
     margin-top: 50px;
     text-align: justify;
 

@@ -59,8 +59,18 @@
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           }).addTo(map);
 
-          var Posto1 = L.marker([-7.08, -41.48]).addTo(map);
-          Posto1.bindPopup("<b>Posto1</b><br> Preço : R$ 00,00 <p> Este posto tem a referência tal... </p>").openPopup();
+          var Postos = [];
+          Postos[0] = L.marker([-7.05, -41.48]).addTo(map);
+          Postos[1] = L.marker([-7.08, -41.48]).addTo(map);
+          Postos[2] = L.marker([-7.08, -41.48]).addTo(map);
+          Postos[3] = L.marker([-7.08, -41.48]).addTo(map);
+          Postos[4] = L.marker([-7.08, -41.48]).addTo(map);
+
+          Postos[0].bindPopup("<b>Posto Total</b><br> Preço : R$ 00,00 <p> Este posto tem a referência tal... </p>").openPopup();
+          Postos[1].bindPopup("<b>Posto1</b><br> Preço : R$ 00,00 <p> Este posto tem a referência tal... </p>").openPopup();
+          Postos[2].bindPopup("<b>Posto1</b><br> Preço : R$ 00,00 <p> Este posto tem a referência tal... </p>").openPopup();
+          Postos[3].bindPopup("<b>Posto1</b><br> Preço : R$ 00,00 <p> Este posto tem a referência tal... </p>").openPopup();
+          Postos[4].bindPopup("<b>Posto1</b><br> Preço : R$ 00,00 <p> Este posto tem a referência tal... </p>").openPopup();
 
       
 
@@ -76,6 +86,12 @@
       }
 
       map.on('click', onMapClick);
+
+
+      function Distancia(C1, C2){
+        return (sqrt(((C2[0] - C1[0]) ^ 2) + ((C2[1] - C1[1]) ^ 2));)
+
+      }
 
         // latitude 07º04'37" sul e a uma longitude 41º28'01"
         

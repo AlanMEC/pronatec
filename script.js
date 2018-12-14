@@ -26,13 +26,16 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-red";
 
   if(n==1)
-    TrocaLegenda("Catedral de Nossa Senhora dos Remédios");
+    TrocaLegenda("Posto Facilite.");
   if(n==2)
-    TrocaLegenda("Igreja Coração de Jesus.");
+    TrocaLegenda("Posto Machado.");
   if(n==3)
-    TrocaLegenda("Catedral de Nossa Senhora dos Remédios.");
+    TrocaLegenda("Posto Novo I.");
   if(n==4)
-    TrocaLegenda("Centro de picos a noite.");
+    TrocaLegenda("Posto Total.");
+  if(n==5)
+    TrocaLegenda("Posto Três Corações.");
+
 
 
 
@@ -41,3 +44,7 @@ function showDivs(n) {
 function TrocaLegenda(txt){
 
   document.getElementById('legenda').innerHTML = "<p id ='legenda'>"+txt+"</p> ";}
+
+
+
+  
