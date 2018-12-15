@@ -36,20 +36,13 @@
 
         </nav>
 
-        <div id="Conteudo">
 
-            <h1>Postos Locais</h1>
-
-
-
-            <div id="map" style=" margin-left:5%; width: 90%; height: 400px"></div>
+        <div id="map" style=" margin-left:5%; width: 90%; height: 90%"></div>
 
 
             
             
             
-
-        </div>
 
 
           <script type="text/javascript">
@@ -60,17 +53,17 @@
           }).addTo(map);
 
           var Postos = [];
-          Postos[0] = L.marker([-7.05, -41.48]).addTo(map);
-          Postos[1] = L.marker([-7.08, -41.48]).addTo(map);
-          Postos[2] = L.marker([-7.08, -41.48]).addTo(map);
-          Postos[3] = L.marker([-7.08, -41.48]).addTo(map);
-          Postos[4] = L.marker([-7.08, -41.48]).addTo(map);
+          Postos[0] = L.marker([-7.084423,-41.470929]).addTo(map);
+          Postos[1] = L.marker([-7.08782,-41.474757]).addTo(map);
+          Postos[2] = L.marker([-7.078376,-41.485132]).addTo(map);
+          Postos[3] = L.marker([-7.086425,-41.470261]).addTo(map);
+          Postos[4] = L.marker([-7.087948,-41.470358]).addTo(map);
 
-          Postos[0].bindPopup("<b>Posto Total</b><br> Preço : R$ 00,00 <p> Este posto tem a referência tal... </p>").openPopup();
-          Postos[1].bindPopup("<b>Posto1</b><br> Preço : R$ 00,00 <p> Este posto tem a referência tal... </p>").openPopup();
-          Postos[2].bindPopup("<b>Posto1</b><br> Preço : R$ 00,00 <p> Este posto tem a referência tal... </p>").openPopup();
-          Postos[3].bindPopup("<b>Posto1</b><br> Preço : R$ 00,00 <p> Este posto tem a referência tal... </p>").openPopup();
-          Postos[4].bindPopup("<b>Posto1</b><br> Preço : R$ 00,00 <p> Este posto tem a referência tal... </p>").openPopup();
+          Postos[0].bindPopup("<b>Posto Total</b><br> Preço : R$ 3,85 <p> Nota: 3,4 </p>").openPopup();
+          Postos[1].bindPopup("<b>Posto Facilite</b><br> Preço : R$ 2,75 <p> Nota: 4,4 </p>").openPopup();
+          Postos[2].bindPopup("<b>Posto Shell</b><br> Preço : R$ 4,67 <p> Nota: 4,3 </p>").openPopup();
+          Postos[3].bindPopup("<b>Posto Três Corações</b><br> Preço : R$ 3,10 <p> Nota: 3,8 </p>").openPopup();
+          Postos[4].bindPopup("<b>Posto Machado</b><br> Preço : R$ 5,10 <p> Nota: 4,8 </p>").openPopup();
 
       
 
@@ -83,13 +76,25 @@
               .setLatLng(e.latlng)
               .setContent("You clicked the map at " + e.latlng.toString())
               .openOn(map);
+          
+          var ponto = [e.latlng.lat,e.latlng.lng];
+          console.log(ponto);
+          
+          console.log(Distancia(ponto, Postos[0]));
+          console.log(Distancia(ponto, Postos[1]));
+          console.log(Distancia(ponto, Postos[2]));
+          console.log(Distancia(ponto, Postos[3]));
+          console.log(Distancia(ponto, Postos[4]));
+
+
       }
+
 
       map.on('click', onMapClick);
 
 
       function Distancia(C1, C2){
-        return (sqrt(((C2[0] - C1[0]) ^ 2) + ((C2[1] - C1[1]) ^ 2));)
+        return Math.sqrt(((C2[0] - C1[0]) ^ 2) + ((C2[1] - C1[1]) ^ 2));
 
       }
 

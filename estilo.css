@@ -1,5 +1,5 @@
 body {
-    background-color: #C0C0C0;
+    background-color: #DCDCDC;
 }
 
 
@@ -9,9 +9,9 @@ body {
   	justify-content: center;
 
 
-    padding:5px;
-    margin:10px;
-    background-color:#2F4F4F;
+    padding:10px;
+    margin:1px;
+    background-color:#20B2AA;
     list-style:none;
 }
 
@@ -28,16 +28,16 @@ body {
 
     /* visual do link */
 
-    background-color:#4682B4;
+    background-color:#DCDCDC;
     color: #333;
     text-decoration: none;
-    border-bottom:10px solid   #006400;
+    border-bottom:10px solid #DCDCDC;
 }
 
 #menu ul li a:hover {
     background-color:#D6D6D6;
     color: #6D6D6D;
-    border-bottom:5px solid #EA0000;
+    border-bottom:5px solid #008000;
 }
 
 #Rodape {
@@ -45,7 +45,7 @@ body {
 	width: 100%;display: flex;
 	position: absolute;
 	bottom: 0px;
-    background-color: #708090;
+    background-color: #20B2AA;
 }
 
 #Conteudo{
